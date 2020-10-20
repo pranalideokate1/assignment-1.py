@@ -1,0 +1,26 @@
+fo=open("file.txt",'w+')
+fo.write("Python is programming language and python is simple to understand it is very easy if you understand it ")
+fo.close()
+fo=open("file.txt",)
+str=fo.read()
+data=str.split() 
+counts=dict() 
+for i in data: 
+    if i in counts: 
+        counts[i]+=1 
+    else: 
+            counts[i]=1
+w=len(str)
+l=len(data)
+print("Total Characters in the file is :",w)
+print("Total Words in the file is :",l) 
+print("occurrence:",counts)
+
+fo.close()    
+
+''' OUTPUT-
+Total Characters in the file is : 103
+Total Words in the file is : 18
+occurrence: {'Python': 1, 'is': 3, 'programming': 1, 'language': 1, 'and': 1, 'python': 1, 'simple': 1, 'to': 1, 'understand': 2, 'it': 2, 'very': 1, 'easy': 1, 'if': 1, 'you': 1}
+
+[Program finished]'''
